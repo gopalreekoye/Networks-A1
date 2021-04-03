@@ -8,7 +8,7 @@ $(BIN)/%.class:$(SRC)/%.java
 	$(JC) -d $(BIN)/ -cp $(BIN)/ $<
 
 
-CLASSES=Client.class Server.class
+CLASSES=User.class Message.class Client.class Server.class
 CLASS_FILES = $(CLASSES:%.class=$(BIN)/%.class)
 
 default: $(CLASS_FILES)
